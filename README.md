@@ -4,7 +4,6 @@ Dreamwalkers are Shamans with a strong divine connection to the Region of Dreams
 They not only tap into the energies that flow through the earth and air, through plants and animals, and even through the dead, but also those of the Region of Dreams and the Demiplane of Nightmares and shape these energies to obey their will.   
   
 Class features:  
-   
     May only wear leather, studded leather, and hide armor  
     May not equip shields larger than bucklers  
     May only use the following weapons: dagger, club, spear, axe, quarterstaff, dart, sling, and shortbow  
