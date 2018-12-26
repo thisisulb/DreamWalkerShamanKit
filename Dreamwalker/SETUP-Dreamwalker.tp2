@@ -1,6 +1,7 @@
 BACKUP ~Dreamwalker/Backup~ // So WeiDU can uninstall
 AUTHOR ~Ulb~
 README ~Dreamwalker/readme.txt~ // Shows readme file
+VERSION ~1.2~
 
 ALWAYS
   INCLUDE ~Dreamwalker/lib/functions.tph~   // Borrowed from Argent77 for dynamic animtion slot search code
