@@ -19,26 +19,26 @@ Class features:
     Does not gain bonus spells per day for high Wisdom  
     Hit Die: d8  
     May not Dual-class  
-	  
-	SHAMANIC DANCE:  
+    
+**SHAMANIC DANCE:**    
 	While dancing, the Shaman takes a +4 penalty to Armor Class and cannot move, attack, cast spells, use items and special abilities, or perform any other activity.  
 	  
-	DREAM DANCE:  
+**DREAM DANCE:**    
 	After one round the Dreamwalker will fall asleep and take <PRO_HISHER> Dream Form from the Region of Dreams to Ethereal Plane. While in <PRO_HISHER> Dream Form the Shaman is immune to most mind altering effects like fear or confusion, both in <PRO_HISHER> Dream Form and <PRO_HISHER> physical body.  
-	The Dream Form moves at four times the Dreamwalker's normal movement rate, is completely invisible and can not be affected by attacks or spells. After one turn or when <PRO_HISHER> physical body takes damage, the Dream Form disperses and the Shaman returns to <PRO_HISHER> body.  
+The Dream Form moves at four times the Dreamwalker's normal movement rate, is completely invisible and can not be affected by attacks or spells. After one turn or when <PRO_HISHER> physical body takes damage, the Dream Form disperses and the Shaman returns to <PRO_HISHER> body.  
 	  
-	NIGHTMARE DANCE:  
+**NIGHTMARE DANCE:**    
 	After one round the Dreamwalker will fall asleep and infuse <PRO_HISHER> Dream Form with essence from the Demiplane of Nightmares, turning it into a Nightmare manifestation. The Nightmare then enters the Material Plane for up to one turn. While in <PRO_HISHER> Nightmare Form the Shaman is immune to most mind altering effects like fear or confusion, both in <PRO_HISHER> Nightmare Form and <PRO_HISHER> physical body.  
 	Should the Shaman's physical body take any damage or the Nightmare Form be destroyed the Shaman will wake immediately.  
 	  
-    Nightmare Form:  
+**Nightmare Form:**  
 	Nightmare Grasp: Opponents struck are slowly pulled toward the Nightmare for 3 seconds.  
 	Level  6: HP 60, 4 APR, 3d4 magic/cold/slashing damage, Thac0 10, Saves 12, Cold Resist 100, Each Resist 50, AC 2   
 	Level 12: HP 120, 4 APR, 3d6 magic/cold/slashing damage, Thac0 4, Saves 6, Cold Resist 100, Each Resist 50, AC -2   
 	Level 18: HP 180, 4 APR, 6d8 magic/cold/slashing damage, Thac0 -2, Saves 0, Cold Resist 100, Each Resist 50, AC -6   
 	Level 24: HP 240, 4 APR, 6d10 magic/cold/slashing damage, Thac0 -8, Saves -6, Cold Resist 100, Each Resist 50, AC -10  
   	
-Dream Dust (replaces Writhing Fog):  
+**Dream Dust (replaces Writhing Fog):**  
 (Conjuration)  
   
 Level: 2  
@@ -54,7 +54,7 @@ Creatures that remain in the cloud mast make a new save each round for the full 
 Elves have a very high chance to be unaffected by the effects of the cloud while Half-Elves will resist the effects one out of three times.  
   
 	
-Nightmare Invocation (replaces Spiritual Clarity):  
+**Nightmare Invocation (replaces Spiritual Clarity):**  
 (Enchantment)  
   
 Level: 3  
@@ -69,7 +69,7 @@ By casting this spell, the Dreamwalker channels a burst of energy from the Demip
   
 
 
-Nightmare Imprisonment (replaces Spiritual Lock):  
+**Nightmare Imprisonment (replaces Spiritual Lock):**  
 (Enchantment)  
   
 Level: 6  
