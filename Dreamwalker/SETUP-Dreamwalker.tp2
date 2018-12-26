@@ -1,0 +1,209 @@
+BACKUP ~Dreamwalker/Backup~ // So WeiDU can uninstall
+AUTHOR ~Ulb~
+README ~Dreamwalker/readme.txt~ // Shows readme file
+
+ALWAYS
+  INCLUDE ~Dreamwalker/lib/functions.tph~   // Borrowed from Argent77 for dynamic animtion slot search code
+  INCLUDE ~Dreamwalker/lib/handle_charsets.tpa~   // Borrowed from Edwin Romance: convert strings to UTF-8 for BGEE/BG2EE
+  INCLUDE ~Dreamwalker/lib/fl#add_kit_ee.tpa~ // EE compatibility patch, updated version by Subtledoctor
+  ACTION_DEFINE_ARRAY UBnoconvert BEGIN END // No exception, everything needs to be converted
+  ACTION_DEFINE_ARRAY UBreload BEGIN UB#DW END   // UB#DW.tra needs to be reloaded?
+  LAF HANDLE_CHARSETS     // There is no "language" folder so the root of all languages is Dreamwalker
+    INT_VAR
+      infer_charset = 1
+    STR_VAR
+      tra_path = EVAL ~Dreamwalker/translations~
+	  noconvert_array = UBnoconvert
+      reload_array = UBreload
+  END
+  ACTION_IF (NOT GAME_IS ~soa tob iwd2 pst bg1 totsc iwd how totlm tutu tutu_totsc bgt ca iwd_in_bg2 bg2ee eet iwdee~) THEN BEGIN     // Check if BGEE/SOD
+    COPY ~Dreamwalker/files/25STWEAP.2DA~ ~override~                                                               // Add working 25STWEAP.2DA copy from BGII so ADD_KIT command doesn't break
+  END
+END
+  
+LANGUAGE ~English~  ~english~ ~Dreamwalker/translations/english/UB#DW.tra~
+LANGUAGE ~Italian] [Translation by Keerian, proofreading by Aedan and Improbabile~  ~Italian~ ~Dreamwalker/translations/italian/UB#DW.tra~
+//LANGUAGE ~Deutsch~  ~german~  ~Dreamwalker/translations/german/UB#DW.tra~  
+  
+  
+  BEGIN ~Dreamwalker Shaman Kit~ 
+  REQUIRE_PREDICATE (GAME_IS ~bgee bg2ee eet~) ~This mod is only for BGEE, SOD, BG2EE, EET~
+
+
+// Internal name of the kit
+  ADD_KIT ~UB#DW~
+
+// Appended to CLASWEAP.2da
+  ~UB#DW                1       0       1      1       0       0        0       1~
+
+// Appended column-wise to WEAPPROF.2da
+  ~UB#DW 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 0 1 1 0 0 0 1 0 0 1 1 1 1 1 1 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0~
+// Appended to ABCLASRQ.2da
+  ~UB#DW                0       0       12     0       12      0~
+
+// Appended to ABCLSMOD.2da
+  ~UB#DW                0       0       0      0       0       0~
+
+// Appended to ABDCDSRQ.2da
+  ~UB#DW                0       0       0      0       0       0~
+
+// Appended to ABDCSCRQ.2da
+  ~UB#DW                0       0       0      0       0       0~
+
+// Appended to ALIGNMNT.2da
+  ~UB#DW                1       1       1      1       1       1       1       1       1~ // LG LN LE NG NN NE CG CN CE
+
+// Appended to DUALCLAS.2da
+  ~UB#DW                0       0       0       0       0       0~
+
+// Path to my CLAB.2da file 
+  ~Dreamwalker/files/CLABUB!D.2da~
+
+// PC races and classes allowed to use this kit, from KITTABLE.2da
+  ~K_SH_H K_SH_HO~
+
+// Usability flags, added to the end of the KITLIST.2da entry
+  ~0x00004000        21~
+
+// HLA table to use; see LUABBR.2da
+  ~UB!DW~
+
+// List of starting equipment for PCs starting in ToB. Appended column-wise to 25STWEAP.2da
+  ~LEAT20 * HELM019 BAG27A RING06 RING31 CLCK02 BOOT01 AMUL19 BRAC14 BELT06 AROW11,40 BULL03,40 BOLT06,40 POTN52,5 POTN4,2 POTN14,5 HAMM07 SW1H27 STAF08~  // vanilla shaman equippment
+  
+// Lower, mixed, and help kit names and descriptions, added to KITLIST.2da 
+  SAY @1
+  SAY @1
+  SAY @2
+  
+// Call EE compatibility patch
+  LAF fl#add_kit_ee
+    STR_VAR
+    kit_name = UB#DW
+  END
+  
+///////////////////////////////
+// Install Spirit Animations //
+///////////////////////////////
+  
+ 
+// Nightmare Animation
+  LAF FIND_FREE_ANIM_SLOT INT_VAR slotMin = 0xe000 slotMax = 0xefff RET slot END
+  ACTION_IF (slot <= 0) BEGIN
+    FAIL ~No free creature animation slot found.~// No free creature animation slot found.
+  END
+  LAF TO_HEX_NUMBER INT_VAR value = slot minDigits = 4 RET hexNumber END
+  APPEND ~animate.ids~ ~0x%hexNumber% SHA_WOW~ UNLESS ~SHA_WOW~
+  CLEAR_IDS_MAP
+  COPY ~Dreamwalker/files/Nightmare/exxx.ini~ ~override/%hexNumber%.ini~
+  COPY ~Dreamwalker/files/Nightmare/Animation~ ~override~
+
+///////////////////////////////
+//       Copy Stuff Over     //
+///////////////////////////////
+  
+  
+// Bluk Copy
+  COPY ~Dreamwalker/files/copy~ ~override~  
+  
+// Items
+  COPY ~Dreamwalker/files/items/UB!DW2B.ITM~ ~override~
+  SAY NAME1 @3 // unidentified name for items OR spell name
+  SAY NAME2 @3 // unidentified name for items OR spell name	
+
+  COPY ~Dreamwalker/files/items/UB!DW2D.ITM~ ~override~  
+  SAY NAME1 @3 // unidentified name for items OR spell name
+  SAY NAME2 @3 // unidentified name for items OR spell name	
+
+  COPY ~Dreamwalker/files/items/UB!DW2E.ITM~ ~override~  
+  SAY NAME1 @3 // unidentified name for items OR spell name
+  SAY NAME2 @3 // unidentified name for items OR spell name	
+
+  COPY ~Dreamwalker/files/items/UB!DW2F.ITM~ ~override~
+  SAY NAME1 @3 // unidentified name for items OR spell name
+  SAY NAME2 @3 // unidentified name for items OR spell name	
+ 
+// Creatures
+  COPY ~Dreamwalker/files/creatures/UB!DW2B.CRE~ ~override~
+  SAY NAME1 @4 // unidentified name for items OR spell name
+  SAY NAME2 @4 // unidentified name for items OR spell name
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~SHA_WOW~))
+
+  COPY ~Dreamwalker/files/creatures/UB!DW2D.CRE~ ~override~
+  SAY NAME1 @4 // unidentified name for items OR spell name
+  SAY NAME2 @4 // unidentified name for items OR spell name
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~SHA_WOW~))
+
+  COPY ~Dreamwalker/files/creatures/UB!DW2E.CRE~ ~override~
+  SAY NAME1 @4 // unidentified name for items OR spell name
+  SAY NAME2 @4 // unidentified name for items OR spell name
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~SHA_WOW~))
+
+  COPY ~Dreamwalker/files/creatures/UB!DW2F.CRE~ ~override~
+  SAY NAME1 @4 // unidentified name for items OR spell name
+  SAY NAME2 @4 // unidentified name for items OR spell name
+  WRITE_LONG 0x28 (IDS_OF_SYMBOL (~animate~ ~SHA_WOW~))
+  
+// Projectiles
+  ADD_PROJECTILE ~Dreamwalker/files/UB!DWPR.pro~
+  
+  // sleep prot
+APPEND ~splprot.2da~ ~ULB_SLEEP%TAB%0x111%TAB%0x01%TAB%8~
+APPEND ~splprot.2da~ ~ULB_NOSLEEP%TAB%0x111%TAB%0x01%TAB%9~
+
+COPY_EXISTING ~splprot.2da~ ~override~
+  COUNT_2DA_COLS cols
+  READ_2DA_ENTRIES_NOW rows cols
+  FOR (row = 1; row < rows; ++row) BEGIN
+    READ_2DA_ENTRY_FORMER rows row 0 ~state~
+    PATCH_IF ~%state%~ STRING_EQUAL_CASE ~ULB_SLEEP~ BEGIN
+      SET sleep_row = %row%
+    END
+    PATCH_IF ~%state%~ STRING_EQUAL_CASE ~ULB_NOSLEEP~ BEGIN
+      SET NOsleep_row = %row%
+    END
+END
+      
+// Spells
+
+  COPY ~Dreamwalker/files/spells/UB!DW4.SPL~ ~override~
+  SAY NAME1 @17 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @18 // unidentified description for items, spell description for spells
+  
+  COPY ~Dreamwalker/files/spells/UB!DW5.SPL~ ~override~
+  SAY NAME1 @19 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @20 // unidentified description for items, spell description for spells
+  LPF ALTER_EFFECT INT_VAR match_opcode = 324 parameter2 = %NOsleep_row% END
+
+  COPY ~Dreamwalker/files/spells/UB!DW0A.SPL~ ~override~
+  SAY NAME1 @5 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @6 // unidentified description for items, spell description for spells
+
+  COPY ~Dreamwalker/files/spells/UB!DW0B.SPL~ ~override~
+  SAY NAME1 @7 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @8 // unidentified description for items, spell description for spells
+
+  COPY ~Dreamwalker/files/spells/UB!DW0C.SPL~ ~override~
+  SAY NAME1 @9 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @10 // unidentified description for items, spell description for spells
+  
+  COPY ~Dreamwalker/files/spells/UB!DW3.SPL~ ~override~
+  SAY NAME1 @11 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @12 // unidentified description for items, spell description for spells 
+  WRITE_SHORT 0x098 ~%UB!DWPR%~
+      
+  COPY ~Dreamwalker/files/spells/UB!DWH1.SPL~ ~override~
+  SAY NAME1 @13 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @14 // unidentified description for items, spell description for spells  
+  
+  COPY ~Dreamwalker/files/spells/UB!DWH2.SPL~ ~override~
+  SAY NAME1 @15 // unidentified name for items OR spell name
+  SAY UNIDENTIFIED_DESC @16 // unidentified description for items, spell description for spells  
+  
+// Append 2DA
+  OUTER_SET CLEARAIR    = %UB!DWPR% - 1
+  //APPEND ~CLEARCLD.2DA~ ~Dream_Dust           %CLEARAIR%~ UNLESS ~%CLEARAIR%~
+  APPEND ~CLEARAIR.2DA~ ~Dream_Dust           %CLEARAIR%~ UNLESS ~%CLEARAIR%~
+
+// Compile Scripts And Dialogues.
+  COMPILE ~Dreamwalker/files/UB!DW2.baf~

@@ -1,0 +1,16 @@
+IF
+	!StateCheck(LastSummonerOf(Myself),STATE_SLEEPING)
+THEN
+	RESPONSE #100
+		ApplySpellRES("UB!DWUN",Myself)  // No such index
+END
+
+IF
+	HPLT(Myself,10)
+	Global("UB!DWDEAD","LOCALS",0)
+THEN
+	RESPONSE #100
+		SetGlobal("UB!DWDEAD","LOCALS",1)
+		ApplySpellRES("UB!DW2D",LastSummonerOf(Myself))
+		ApplySpellRES("UB!DWUN",Myself)  // No such index
+END

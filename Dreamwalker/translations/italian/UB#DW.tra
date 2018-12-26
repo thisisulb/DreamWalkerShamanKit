@@ -1,0 +1,114 @@
+@1 = ~Sogno Errante~
+@2 = ~SOGNO ERRANTE: Il sogno errante è uno sciamano che ha una profonda connessione divina con la Regione dei Sogni. Attinge non solo dalle energie che fluiscono attraverso terra e aria, piante ed animali, perfino dalla morte, ma anche da quelle appartenenti alla Regione dei Sogni e al Semipiano degli Incubi e le plasma affinché si pieghino alla sua volontà.
+
+ABILITÀ DI CLASSE:
+
+- Può indossare soltanto armature di cuoio, armature di cuoio borchiato e armature di pelle.
+- Può equipaggiare soltanto buckler.
+- Può utilizzare soltanto le seguenti armi: pugnale, clava, lancia, bastone rinforzato, dardo, fionda e arco corto.
+- Può diventare soltanto Competente (un punto) in qualsiasi classe di armi.
+- Può diventare soltanto Competente (un punto) in qualsiasi stile di combattimento.
+- Può lanciare incantesimi da druido.
+- Non apprende automaticamente tutti gli incantesimi di un dato livello come il druido. Al contrario, lo sciamano seleziona nuovi incantesimi da imparare quando sale di livello; una volta appresi, può lanciarli ogni giorno senza doverli memorizzare.
+- In aggiunta all'apprendimento di nuovi incantesimi ad ogni livello, lo sciamano ottiene accesso immediato ad un numero di magie specifiche della sua classe che possono essere lanciate come qualsiasi altro incantesimo nel suo repertorio: Interdizione agli Spiriti, Polvere Onirica, Invocare Incubo, Fuoco Spirituale, Richiamare Spirito, Imprigionamento nell'Incubo e Portale Etereo.
+- Ottiene l'uso dell'abilità Individuare Illusioni con il 20% di punti base e con 4 punti addizionali per livello, sino ad un massimo del 100% al 20° livello.
+- Può attivare l'abilità Danza Sciamanica a piacimento. Il sogno errante può portare la sua Forma Onirica dalla Regione dei Sogni al Piano Etereo eseguendo una danza rituale. Mentre danza, lo sciamano subisce una penalità pari a -4 alla Classe Armatura e non può muoversi, attaccare, lanciare incantesimi, usare oggetti e abilità speciali o eseguire qualsiasi altra azione.
+  Dopo un round, il sogno errante cade addormentato e conduce la sua Forma Onirica dalla Regione dei Sogni al Piano Etereo. Finché si trova nella sua Forma Onirica, lo sciamano non può essere percepito dagli altri e può muoversi libero e indisturbato, benché non sia in grado di compiere alcuna azione come attaccare o lanciare incantesimi.
+  Al 6° livello ottiene l'abilità di alternarsi tra la Danza del Sogno e la Danza dell'Incubo a piacimento.
+
+	DANZA SCIAMANICA:
+	Mentre danza, lo sciamano subisce una penalità pari a -4 alla Classe Armatura e non può muoversi, attaccare, lanciare incantesimi, usare oggetti e abilità speciali o eseguire qualsiasi altra azione.
+	
+	DANZA DEL SOGNO:
+	Dopo un round, il sogno errante cade addormentato e conduce la sua Forma Onirica dalla Regione dei Sogni al Piano Etereo. Finché si trova nella sua Forma Onirica, lo sciamano è immune alla maggior parte degli effetti di alterazione mentale come Paura o Confusione, sia nella sua Forma Onirica sia nel suo corpo fisico.
+	La Forma Onirica ha un Fattore-movimento pari a quattro volte quello del Sogno Errante, è completamente invisibile e non può essere oggetto di attacchi o incantesimi. Dopo un turno o quando il suo corpo fisico subisce danni, la Forma Onirica si disperde e lo sciamano ritorna al suo corpo.
+	
+	DANZA DELL'INCUBO:
+	Dopo un round, il sogno errante cade addormentato e infonde la sua Forma Onirica con l'essenza proveniente dal Semipiano degli Incubi, trasformandola c in una manifestazione dell'Incubo. L'Incubo entra quindi nel Piano Materiale per un turno. Finché si trova nella sua Forma Incubo, lo sciamano è immune alla maggior parte degli effetti di alterazione mentale come Paura o Confusione, sia nella sua Forma Incubo sia nel suo corpo fisico.
+	Nel caso in cui il corpo fisico dello sciamano subisca danni o la sua Forma Incubo venga distrutta, lo sciamano si risveglia automaticamente.
+	
+    Caratteristiche della Forma Incubo:
+	6° Livello: 60 PF, 4 APR, 3d4 punti di danno da magia/da freddo/tagliente, THAC0 10, Tiri-salvezza 12, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA 2
+	12° Livello: 120 PF, 4 APR, 3d6 punti di danno da magia/da freddo/tagliente, THAC0 4, Tiri-salvezza 6, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA -2
+	18° Livello: 180 PF, 4 APR, 6d8 punti di danno da magia/da freddo/tagliente, THAC0 -2, Tiri-salvezza 0, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA -6
+	24° Livello: 240 PF, 4 APR, 6d10 punti di danno da magia/da freddo/tagliente, THAC0 -8, Tiri-salvezza -6, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA -10
+	I nemici colpiti vengono lentamente trascinati verso l'Incubo per 3 secondi.
+
+- Non ottiene incantesimi bonus al giorno derivanti da un'alta Saggezza.
+- Non può diventare Biclasse.
+- Dado-vita: d8.~
+@3 = ~Attacco~
+@4 = ~Incubo~
+@5 = ~Danza Sciamanica~
+@6 = ~Consente al sogno errante di scegliere una Danza Sciamanica~
+@7 = ~Danza del Sogno~
+@8 = ~Danza del Sogno
+Dopo un round, il sogno errante cade addormentato e conduce la sua Forma Onirica dalla Regione dei Sogni al Piano Etereo. Finché si trova nella sua Forma Onirica, lo sciamano è immune alla maggior parte degli effetti di alterazione mentale come Paura o Confusione, sia nella sua Forma Onirica sia nel suo corpo fisico.
+La Forma Onirica ha un Fattore-movimento pari a quattro volte quello del Sogno Errante, è completamente invisibile e non può essere oggetto di attacchi o incantesimi. Dopo un turno o quando il suo corpo fisico subisce danni, la Forma Onirica si disperde e lo sciamano ritorna al suo corpo.~
+@9 = ~Danza dell'Incubo~
+@10 = ~Danza dell'Incubo
+Dopo un round, il sogno errante cade addormentato e infonde la sua Forma Onirica con l'essenza proveniente dal Semipiano degli Incubi, trasformandola c in una manifestazione dell'Incubo. L'Incubo entra quindi nel Piano Materiale per un turno. Finché si trova nella sua Forma Incubo, lo sciamano è immune alla maggior parte degli effetti di alterazione mentale come Paura o Confusione, sia nella sua Forma Incubo sia nel suo corpo fisico.
+Nel caso in cui il corpo fisico dello sciamano subisca danni o la sua Forma Incubo venga distrutta, lo sciamano si risveglia automaticamente.
+	
+    Caratteristiche della Forma Incubo:
+	6° Livello: 60 PF, 4 APR, 3d4 punti di danno da magia/da freddo/tagliente, THAC0 10, Tiri-salvezza 12, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA 2
+	12° Livello: 120 PF, 4 APR, 3d6 punti di danno da magia/da freddo/tagliente, THAC0 4, Tiri-salvezza 6, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA -2
+	18° Livello: 180 PF, 4 APR, 6d8 punti di danno da magia/da freddo/tagliente, THAC0 -2, Tiri-salvezza 0, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA -6
+	24° Livello: 240 PF, 4 APR, 6d10 punti di danno da magia/da freddo/tagliente, THAC0 -8, Tiri-salvezza -6, Resistenza al Freddo 100%, Tutte le resistenze 50%, CA -10
+	I nemici colpiti vengono lentamente trascinati verso l'Incubo per 3 secondi.~
+@11 = ~Polvere Onirica~
+@12 = ~Polvere Onirica
+(Evocazione)
+Livello: 2
+Sfera: Attrazione
+Raggio d'azione: Visuale del lanciatore
+Durata: 1 turno
+Tempo di lancio: 2
+Area d'effetto: Raggio di 9 metri
+Tiro-salvezza: Speciale
+
+Questo incantesimo evoca una nube di polvere onirica dal Regno dei Sogni. Ad eccezione del lanciatore, ogni creatura che entra nella nube deve effettuare con successo un tiro-salvezza contro Incantesimi per evitare che il proprio spirito venga attirato nella Regione dei Sogni, facendolo cadere addormentato per un round. Tutte le creature che rimangono nella nube devono effettuare un tiro-salvezza ad ogni round per l'intera durata dell'incantesimo. Gli elfi hanno un'elevata possibilità di non subire gli effetti della nube, mentre i mezzelfi hanno una possibilità su tre di resistere all'incantesimo.~
+@13 = ~Sudario Onirico~
+@14 = ~Sudario Onirico
+Raggio d'azione: 0
+Durata: 5 round
+Tempo di lancio: 1
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Lo sciamano trasla parte del suo corpo materiale in uno spazio tra la Regione del Sogno e il Piano Materiale, rendendosi parzialmente incorporeo. Per i successivi 5 round, tutti gli attacchi diretti verso il sogno errante e quelli da lui scagliati infliggono il 50% del loro normale danno. In questo lasso di tempo, lo sciamano è inoltre sotto l'effetto di Invisibilità Potenziata e può muoversi con un Fattore-movimento doppio. È impossibile utilizzare le Danze Sciamaniche per tutta la durata dell'incantesimo.~
+@15 = ~Fuga Onirica~
+@16 = ~Fuga Onirica
+Raggio d'azione: 0
+Durata: 5 round
+Tempo di lancio: 1
+Area d'effetto: Il lanciatore
+Tiro-salvezza: Nessuno
+
+Lo sciamano trasla il suo corpo materiale in uno spazio tra la Regione del Sogno e il Piano Materiale, rendendosi incorporeo.
+Per i successivi 5 round, lo sciamano non può attaccare, lanciare incantesimi ed essere colpito. Durante questo lasso di tempo, lo sciamano non può essere percepito da altre creature e si muove con un Fattore-movimento quadruplo. È impossibile utilizzare le Danze Sciamaniche per tutta la durata dell'incantesimo.~
+@17 = ~Invocare Incubo~
+@18 = ~Invocare Incubo
+(Incantamento)
+Livello: 3
+Sfera: Guardia
+Raggio d'azione: 0
+Durata: 3 round
+Tempo di lancio: 1
+Area d'effetto: Raggio di 9 metri
+Tiro-salvezza: Neg.
+
+Lanciando questo incantesimo, il sogno errante incanala in un potente attacco psichico un'esplosione di energia proveniente dal Semipiano dell'Incubo. I nemici nel raggio di 9 metri che non effettuano con successo un tiro-salvezza contro Incantesimi percepiranno il lanciatore come la personificazione della loro peggiore paura, fuggendo in preda al terrore per 5 round. Tuttavia, l'energia dell'incubo ritorna rapidamente alla sua fonte, attirando il sogno errante con sé. Se il lanciatore fallisce un tiro-salvezza contro Incantesimi con una penalità pari a -4, viene trascinato nel Semipiano dell'Incubo e reso privo di sensi per 3 round. Ogni 4 livelli, la penalità al tiro-salvezza del lanciatore viene ridotta di 1, fino a raggiungere nessuna penalità al 16° livello.~
+@19 = ~Imprigionamento nell'Incubo~
+@20 = ~Imprigionamento nell'Incubo
+(Incantamento)
+Livello: 6
+Sfera: Guardia
+Raggio d'azione: 0
+Durata: Speciale
+Tempo di lancio: 6
+Area d'effetto: Raggio di 1,5 metri
+Tiro-salvezza: Speciale
+
+Quando questo incantesimo viene lanciato su bersagli addormentati, i loro spiriti vengono attirati e intrappolati nel Semipiano dell'Incubo. Coloro che effettuano con successo un tiro-salvezza contro Morte con una penalità pari a -6 riescono a tornare indietro, svegliandosi dopo 5 turni; gli altri soccombono rapidamente alla paura e alla pazzia, con i loro spiriti fatti a pezzi dagli orrori che risiedono nel Semipiano degli Incubi, e sono perduti per sempre. 
+Mentre si trova intrappolato in un Incubo, il corpo fisico del bersaglio resta addormentato e non può essere svegliato in alcun modo.~
