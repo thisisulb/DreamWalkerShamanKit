@@ -1,17 +1,6 @@
-AUTHOR Ulb (thisisulb@gmail.com)
-Version 1.2
-/////////////////////Change-Log v1.1 -> v1.2/////////////////////
-Fixed bug in clab file
-Added Italian translation
-/////////////////////////////////////////////////////////////////
-/////////////////////Change-Log v1.0 -> v1.1/////////////////////
-Added two additional Dreamwalker specific spells: Nightmare Invocation, Nightmare Imprisonment
-Dream Dust spell: Changed description text, changed sound, added immunity for undead creatures, spell can now be cleared by "zone of sweet air" effects
-/////////////////////////////////////////////////////////////////
-
 This mod installs the Dreamwalker Shaman Kit for BGEE, SoD, BG2EE
 
-******************
+
 Kit description:
 
 DREAMWALKER:
