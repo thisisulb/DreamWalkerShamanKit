@@ -7,6 +7,7 @@ ALWAYS
   INCLUDE ~Dreamwalker/lib/functions.tph~   // Borrowed from Argent77 for dynamic animtion slot search code
   INCLUDE ~Dreamwalker/lib/handle_charsets.tpa~   // Borrowed from Edwin Romance: convert strings to UTF-8 for BGEE/BG2EE
   INCLUDE ~Dreamwalker/lib/fl#add_kit_ee.tpa~ // EE compatibility patch, updated version by Subtledoctor
+  INCLUDE ~%MOD_FOLDER%/lib/RA_SPHERE_COMPAT.tpa~ // Raduziel's DoF's sphere system
   ACTION_DEFINE_ARRAY UBnoconvert BEGIN END // No exception, everything needs to be converted
   ACTION_DEFINE_ARRAY UBreload BEGIN UB#DW END   // UB#DW.tra needs to be reloaded?
   LAF HANDLE_CHARSETS     // There is no "language" folder so the root of all languages is Dreamwalker
@@ -81,6 +82,11 @@ LANGUAGE ~Italian] [Translation by Keerian, proofreading by Aedan and Improbabil
   LAF fl#add_kit_ee
     STR_VAR
     kit_name = UB#DW
+  END
+  
+  // Sphere System
+  ACTION_IF FILE_EXISTS_IN_GAME ~RASPHERE.marker~ BEGIN
+  LAF RA_SPHERE_COMPAT STR_VAR kitname = ~UB#DW~ clabfile = ~CLABUB!D~ END
   END
   
 ///////////////////////////////
