@@ -1,7 +1,7 @@
 BACKUP ~Dreamwalker/Backup~ // So WeiDU can uninstall
 AUTHOR ~Ulb~
 README ~Dreamwalker/readme.txt~ // Shows readme file
-VERSION ~1.2~
+VERSION ~1.3~
 
 ALWAYS
   INCLUDE ~Dreamwalker/lib/functions.tph~   // Borrowed from Argent77 for dynamic animtion slot search code
@@ -86,7 +86,7 @@ LANGUAGE ~Italian] [Translation by Keerian, proofreading by Aedan and Improbabil
   
   // Sphere System
   ACTION_IF FILE_EXISTS_IN_GAME ~RASPHERE.marker~ BEGIN
-  LAF RA_SPHERE_COMPAT STR_VAR kitname = ~UB#DW~ clabfile = ~CLABUB!D~ END
+  LAF RA_SPHERE_COMPAT STR_VAR kitname = ~UB#DW~ clabfile = ~CLABUB!D~ seqresref  = ~UB#DW~ END
   END
   
 ///////////////////////////////
